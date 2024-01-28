@@ -1,0 +1,40 @@
+.container-form{
+    width:400px;
+    min-height: 35px;
+    background-color: #fff;
+    margin:5px 0;
+    padding: 6px 10px 6px 15px;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    color: #26251c;
+    display: flex;
+    font-weight: bold;
+    align-items: center; 
+    gap: 15px;
+    transition: all 0.1s ease;
+    border: solid #fff;
+}
+.container-form:focus-within{
+    border: solid #a0e8b7;
+}
+
+.input-text{
+    width: 80%;
+    min-height: 25px;
+    border: none;
+    cursor: text;
+    outline: none;
+}
+
+.button-form{
+    width: 15%;
+    min-height: 25px;
+    background-color: #a0e8b7;
+    border: 1px solid #78bc38;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button-form:hover{
+    background-color: #75ef9c;
+}

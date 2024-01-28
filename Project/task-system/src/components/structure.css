@@ -1,0 +1,16 @@
+.container-structure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    color: red;
+    max-height: 450px;
+    overflow: scroll;
+}
+
+.container-task{
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    max-height: 450px;
+}
