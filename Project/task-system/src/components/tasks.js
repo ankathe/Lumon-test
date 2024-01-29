@@ -1,34 +1,38 @@
-import React from 'react'
+import React from "react";
 import { FaPencil } from "react-icons/fa6";
 import { BsTrash } from "react-icons/bs";
 import { FaSquareCheck } from "react-icons/fa6";
 import { FcHighPriority } from "react-icons/fc";
-import "./task.css";
+import "./tasks.css";
 
-function Tasks(){
+function Tasks({ id, text, completed, completeTask, deleteTask, editTask }) {
   return (
     <div>
-      <div className="task-container">
-          
-            <div className="icon-check">
-            <FaSquareCheck />
-            </div>
-        <div className="task">
+      <div className={completed ? "task-container completed" : "task-container"}>
 
+        <div className="container-icon-check">
+          <FaSquareCheck
+            className={completed ? "icon-check completed" : "icon-check"}
+          />
         </div>
+
+        <div className="task" onclick={() => completeTask(id)}>
+          {text}
+        </div>
+
         <div className="container-icons-end">
-          <div className="icon-write">
-            <FaPencil />
+          <div className="container-icon-write" onclick={() => editTask(id)}>
+            <FaPencil className="icon-edit" />
           </div>
-          <div className="icon-delete">
-            <BsTrash />
+
+          <div className="container-icon-delete" onclick={() => deleteTask(id)}>
+            <BsTrash className="icon-delete" />
           </div>
-      </div>
+        </div>
 
       </div>
-      
     </div>
-  )
+  );
 }
 
 export default Tasks;

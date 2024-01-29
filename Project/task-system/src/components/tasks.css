@@ -11,6 +11,11 @@
     flex-direction: row;
     font-weight: bold;
     align-items: center; 
+    gap: 5px;
+}
+
+.task-container.completed{
+    text-decoration: line-through;
 }
 
 /* .task-container.completed{
@@ -21,12 +26,13 @@
 .task{
     width: 94%;
     height: 100%;
-    font-size:15px;
+    font-size:13px;
     display: flex; 
     cursor: pointer;
     flex-wrap: wrap;
     align-items: center;
     word-break: break-all;
+    color: #030303;
 }
 .container-icon-start{
     width: 6%;
@@ -41,7 +47,7 @@
     font-weight: bolder;
 }
 
-.icon-check{
+.container-icon-check{
     width: 6%;
     max-height: 450px;
     font-size: 20px;
@@ -54,13 +60,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-.icon-check:hover{
+.container-icon-check:hover{
+    color: #418356;
+}
+
+.icon-check.completed{
     color: #418356;
 }
 
 
 .container-icons-end{
-    width: 6%;
     max-height: 450px;
     font-size: 20px;
     display: flex; 
@@ -72,19 +81,19 @@
     font-weight: bolder;
 }
 
-.icon-delete{
+.container-icon-delete{
     color: #7f7c78;
     transition: all 0.3s ease-in-out;
 }
-.icon-delete:hover{
+.container-icon-delete:hover{
     color:#ea2a15;
 }
 
-.icon-write{
+.container-icon-edit{
     color: #7f7c78;
     transition: all 0.3s ease-in-out;
 }
 
-.icon-write:hover{
+.container-icon-edit:hover{
     color:#030303;
 }
