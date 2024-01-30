@@ -58,8 +58,7 @@ Si encuentras problemas o tienes sugerencias, no dudes en enviar un pull request
 Elaborado por [Katherine Cruz]
 
 
-
-## Informacion de React para manejo de la terminal con create-react-app
+# Informacion oficial de React para manejo de la terminal con create-react-app
 
 ## Getting Started with Create React App
 

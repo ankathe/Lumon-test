@@ -65,7 +65,7 @@
 .container-icon-check{
     width: 6%;
     max-height: 450px;
-    font-size: 20px;
+    font-size: 17px;
     justify-content: left;
     display: flex; 
     color: #ada9a2;
@@ -91,7 +91,6 @@
     cursor: pointer;
     place-content: center;
     gap: 5px;
-    color: #fff;
     font-weight: bolder;
 }
 
@@ -108,7 +107,7 @@
 
 .container-icon-edit{
     font-size: 14px;
-    color: #ada9a2;
+    color: #ffa500;
     transition: all 0.3s ease-in-out;
 }
 
@@ -118,13 +117,14 @@
 
 .container-toEdit{
     max-height: 350px;
-    width: 100%;
+    width: 95%;
+    font-size: 12px;
     display: flex; 
     align-items: center;
     display: flex;
     cursor: pointer;
     gap: 5px;
-    color: #fff;
+    color: #ffa500;
 }
 
 .input-toEdit{
@@ -152,4 +152,18 @@
 
 .container-icon-closeEdit:hover{
     color: #f05a5a;
+}
+
+.container-general{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+}
+
+.form-select{
+    color: purple;
+    font-size: 10px;
+    height: 27px;
+    width: 50%;
 }

@@ -46,18 +46,28 @@ const renderDiv = () => {
   }
 
   return (
-  <div className="container-unedited">
-    <div className= "container-icon-check" onClick={() => completeTask(id)}>
-          <FaSquareCheck className={completed ? "icon-check completed" : "icon-check"}/>
-        </div>
-    <div className={`task ${completed ? "completed" : ""}`} onClick={() => completeTask(id)}> {text} </div>
-    <div className="container-icon-edit"> 
-        <FaPencil onClick={()=>setIsEditing(true) }/>
-    </div>
-    <div className="container-icon-delete" onClick={() => deleteTask(id)}>
-        <BsTrash/>
-    </div>
+  <div className="container-general">
+    <div className="select">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Responsible</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Analist</option>
+      </select>
   </div>
+    <div className="container-unedited">
+      <div className= "container-icon-check" onClick={() => completeTask(id)}>
+        <FaSquareCheck className={completed ? "icon-check completed" : "icon-check"}/> 
+      </div>
+      <div className={`task ${completed ? "completed" : ""}`} onClick={() => completeTask(id)}> {text} </div>
+      <div className="container-icon-edit"> 
+          <FaPencil onClick={()=>setIsEditing(true) }/>
+      </div>
+      <div className="container-icon-delete" onClick={() => deleteTask(id)}>
+          <BsTrash/>
+      </div>
+    </div>
+</div>
   )
 }
 
@@ -73,3 +83,4 @@ const renderDiv = () => {
 }
 
 export default Tasks;
+

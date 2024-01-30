@@ -58,7 +58,7 @@
     min-height: 25px;
     background-color: #a0e8b7;
     border: 1px solid #78bc38;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-family: 'DM Mono', monospace;
