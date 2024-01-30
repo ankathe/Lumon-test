@@ -14,15 +14,19 @@
     gap: 5px;
 }
 
-.task-container.completed{
+.completed{
     text-decoration: line-through;
 }
 
-/* .task-container.completed{
-    background-color: #f17452;
-    text-decoration: line-through;
-} */
-
+.priority-1{
+    background-color: #f08282;
+}
+.priority-2{
+    background-color: #efcb6f;
+}
+.priority-3{
+    background-color: #6eea8b;
+}
 .task{
     width: 94%;
     height: 100%;
@@ -34,6 +38,7 @@
     word-break: break-all;
     color: #030303;
 }
+
 .container-icon-start{
     width: 6%;
     max-height: 450px;
@@ -68,11 +73,10 @@
     color: #418356;
 }
 
-
 .container-icons-end{
     max-height: 450px;
-    font-size: 20px;
     display: flex; 
+    align-content: center;
     justify-content: right;
     cursor: pointer;
     flex-direction: row;
@@ -82,14 +86,17 @@
 }
 
 .container-icon-delete{
+    font-size: 15px;
     color: #7f7c78;
     transition: all 0.3s ease-in-out;
 }
+
 .container-icon-delete:hover{
     color:#ea2a15;
 }
 
 .container-icon-edit{
+    font-size: 14px;
     color: #7f7c78;
     transition: all 0.3s ease-in-out;
 }

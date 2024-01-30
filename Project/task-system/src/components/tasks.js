@@ -1,31 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPencil } from "react-icons/fa6";
 import { BsTrash } from "react-icons/bs";
 import { FaSquareCheck } from "react-icons/fa6";
-import { FcHighPriority } from "react-icons/fc";
 import "./tasks.css";
 
-function Tasks({ id, text, completed, completeTask, deleteTask, editTask }) {
+function Tasks({ id, text, completed, priority, completeTask, deleteTask, editTask }) {
+
   return (
     <div>
-      <div className={completed ? "task-container completed" : "task-container"}>
+      {priority}
+      <div className={`task-container ${completed  ? "completed" : ""} ${priority === 1 ? "priority-1" : "" } ${priority === 2 ? "priority-2" : "" } ${priority === 3 ? "priority-3" : "" }`}>
 
-        <div className="container-icon-check">
+        <div className= "container-icon-check">
           <FaSquareCheck
             className={completed ? "icon-check completed" : "icon-check"}
           />
         </div>
 
-        <div className="task" onclick={() => completeTask(id)}>
+        <div className="task" onClick={() => completeTask(id)}>
           {text}
         </div>
 
         <div className="container-icons-end">
-          <div className="container-icon-write" onclick={() => editTask(id)}>
+          <div className="container-icon-edit" >
             <FaPencil className="icon-edit" />
           </div>
 
-          <div className="container-icon-delete" onclick={() => deleteTask(id)}>
+          <div className="container-icon-delete" onClick={() => deleteTask(id)}>
             <BsTrash className="icon-delete" />
           </div>
         </div>

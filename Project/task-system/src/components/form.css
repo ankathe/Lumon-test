@@ -10,12 +10,35 @@
     display: flex;
     font-weight: bold;
     align-items: center; 
-    gap: 15px;
+    gap: 5px;
     transition: all 0.1s ease;
     border: solid #fff;
 }
 .container-form:focus-within{
     border: solid #a0e8b7;
+}
+
+.container-icons-form{
+    display: flex;
+    flex-direction: row ;
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+    font-size: 10px;
+    color: #26251c;
+    width: 100%;
+}
+
+.priority1-name{
+    color: #ff0000;
+}
+
+.priority2-name{
+    color: #ffa500;
+}
+
+.priority3-name{
+    color: #008000;
 }
 
 .input-text{
