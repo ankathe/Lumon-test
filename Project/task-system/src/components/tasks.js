@@ -9,13 +9,13 @@ function Tasks({ id, text, completed, priority, completeTask, deleteTask, editTa
     <div>
       <div className={`task-container ${completed  ? "completed" : ""} ${priority === "1" ? "priority-1" : "" } ${priority === "2" ? "priority-2" : "" } ${priority === "3" ? "priority-3" : "" }`}>
 
-        <div className= "container-icon-check">
+        <div className= "container-icon-check" onClick={() => completeTask(id)}>
           <FaSquareCheck
             className={completed ? "icon-check completed" : "icon-check"}
           />
         </div>
 
-        <div className="task" onClick={() => completeTask(id)}>
+        <div className={`task ${completed ? "completed" : ""}`} onClick={() => completeTask(id)}>
           {text}
         </div>
 

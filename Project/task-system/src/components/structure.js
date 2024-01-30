@@ -19,9 +19,10 @@ const deleteTask = id => {
 }
 
 const completedTask = id => {
-    const taskIndex= tasks.findIndex(task => task.id === id);
-    tasks[taskIndex].completed = !tasks[taskIndex].completed;
-    setTasks(tasks); 
+    const completedTasks = [...tasks];
+    const taskIndex = completedTasks.findIndex(task => task.id === id);
+    completedTasks[taskIndex].completed =! completedTasks[taskIndex].completed;
+    setTasks(completedTasks); 
 }
 
 // const editTask = id => {
