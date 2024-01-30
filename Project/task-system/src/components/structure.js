@@ -25,10 +25,12 @@ const completedTask = id => {
     setTasks(completedTasks); 
 }
 
-// const editTask = id => {
-//     const tasksUpdated = tasks.find(task => task.id === id);
-//     setTasks(tasksUpdated);
-// }
+const editTask = (updateTask) => {
+    const editedTasks = [...tasks];
+    const editedTasksIndex = editedTasks.findIndex(task => task.id === updateTask.id);
+    editedTasks[editedTasksIndex].text = updateTask.text;
+    setTasks(editedTasks); 
+}
 
     return(
         <div className="container-structure">
@@ -44,6 +46,7 @@ const completedTask = id => {
                     completeTask={completedTask}
                     priority={task.priority}
                     deleteTask={deleteTask}
+                    editTask={editTask}
                     />
                 )
             }

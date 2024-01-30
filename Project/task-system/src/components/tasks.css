@@ -76,19 +76,20 @@
     color: #418356;
 }
 
-.container-icons-end{
-    max-height: 450px;
+.container-unedited{
+    max-height: 350px;
+    width: 100%;
     display: flex; 
-    align-content: center;
-    justify-content: right;
+    align-items: center;
     cursor: pointer;
-    flex-direction: row;
+    place-content: center;
     gap: 5px;
     color: #fff;
     font-weight: bolder;
 }
 
 .container-icon-delete{
+    justify-content: space-between;
     font-size: 15px;
     color: #000;
     transition: all 0.3s ease-in-out;
@@ -100,10 +101,48 @@
 
 .container-icon-edit{
     font-size: 14px;
-    color: #fff;
+    color: #ada9a2;
     transition: all 0.3s ease-in-out;
 }
 
 .container-icon-edit:hover{
     color:#030303;
+}
+
+.container-toEdit{
+    max-height: 350px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+    color: #fff;
+}
+
+.input-toEdit{
+    width: 350px;
+    height: 19px;
+}
+
+.container-icon-checkEdit{
+    font-size: 15px;
+    color: #008000;
+    transition: all 0.3s ease-in-out;
+    place-content: center;
+}
+
+.container-icon-checkEdit:hover{
+    color: #07d407;
+}
+
+.container-icon-closeEdit{
+    font-size: 16px;
+    color: #ff0000;
+    transition: all 0.9s ease-in-out;
+    align-items: center;
+}
+
+.container-icon-closeEdit:hover{
+    color: #f05a5a;
 }
