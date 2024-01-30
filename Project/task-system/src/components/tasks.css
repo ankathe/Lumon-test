@@ -159,6 +159,8 @@
     flex-direction: column;
     gap: 3px;
     width: 100%;
+    overflow-x: scroll;
+
 }
 
 .form-select{

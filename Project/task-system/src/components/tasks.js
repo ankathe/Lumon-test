@@ -52,7 +52,7 @@ const renderDiv = () => {
         <option selected>Responsible</option>
         <option value="1">Manager</option>
         <option value="2">Developer</option>
-        <option value="3">Analist</option>
+        <option value="3">Analyst</option>
       </select>
   </div>
     <div className="container-unedited">

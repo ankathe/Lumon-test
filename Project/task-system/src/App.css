@@ -35,12 +35,11 @@ html,body{
 
 .container-principal{
   width: 500px;
-  min-height: 400px;
+  height: 420px;
   padding: 25px;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.4);
   align-items: center;
   align-content: center;
