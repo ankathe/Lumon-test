@@ -18,6 +18,12 @@ const deleteTask = id => {
     setTasks(tasksUpdated);
 }
 
+const completedTask = id => {
+    const taskIndex= tasks.findIndex(task => task.id === id);
+    tasks[taskIndex].completed = !tasks[taskIndex].completed;
+    setTasks(tasks); 
+}
+
 // const editTask = id => {
 //     const tasksUpdated = tasks.find(task => task.id === id);
 //     setTasks(tasksUpdated);
@@ -34,6 +40,7 @@ const deleteTask = id => {
                     id={task.id}
                     text={task.text}
                     completed={task.completed}
+                    completeTask={completedTask}
                     priority={task.priority}
                     deleteTask={deleteTask}
                     />

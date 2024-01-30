@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { FaPencil } from "react-icons/fa6";
 import { BsTrash } from "react-icons/bs";
 import { FaSquareCheck } from "react-icons/fa6";
@@ -8,8 +7,7 @@ function Tasks({ id, text, completed, priority, completeTask, deleteTask, editTa
 
   return (
     <div>
-      {priority}
-      <div className={`task-container ${completed  ? "completed" : ""} ${priority === 1 ? "priority-1" : "" } ${priority === 2 ? "priority-2" : "" } ${priority === 3 ? "priority-3" : "" }`}>
+      <div className={`task-container ${completed  ? "completed" : ""} ${priority === "1" ? "priority-1" : "" } ${priority === "2" ? "priority-2" : "" } ${priority === "3" ? "priority-3" : "" }`}>
 
         <div className= "container-icon-check">
           <FaSquareCheck

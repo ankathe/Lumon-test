@@ -36,12 +36,12 @@ function Form(props){
 
             <div className="container-icons-form">
                 <input type="radio" id="1" name="priority" value="1" onChange={selectPriority}/>
-                    <label htmlFor="1" className="priority1-name">High Priority</label>
+                    <label htmlFor="1" className={priority === "1" ?  "priority1-name" :""}>High Priority</label>
 
                 <input type="radio" id="2" name="priority" value="2" onChange={selectPriority}/>
-                    <label htmlFor="2" className="priority2-name">Medium Priority</label>
+                    <label htmlFor="2" className={priority === "2" ?  "priority2-name" :""}>Medium Priority</label>
                 <input type="radio" id="3" name="priority" value="3" onChange={selectPriority}/>
-                    <label htmlFor="3" className="priority3-name">Low Priority</label>
+                    <label htmlFor="3" className={priority === "3" ?  "priority3-name" :""}>Low Priority</label>
             </div>
             <input 
             type="text" 

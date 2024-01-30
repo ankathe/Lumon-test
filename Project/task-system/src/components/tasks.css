@@ -19,13 +19,13 @@
 }
 
 .priority-1{
-    background-color: #f08282;
+    border: 2px solid #f08282;
 }
 .priority-2{
-    background-color: #efcb6f;
+    border: 2px solid #efcb6f;
 }
 .priority-3{
-    background-color: #6eea8b;
+    border: 2px solid #047e21;
 }
 .task{
     width: 94%;
@@ -58,7 +58,7 @@
     font-size: 20px;
     justify-content: left;
     display: flex; 
-    color: #7f7c78;
+    color: #ada9a2;
     cursor: pointer;
     flex-direction: row;
     font-weight: bolder;
@@ -87,7 +87,7 @@
 
 .container-icon-delete{
     font-size: 15px;
-    color: #7f7c78;
+    color: #000;
     transition: all 0.3s ease-in-out;
 }
 
@@ -97,7 +97,7 @@
 
 .container-icon-edit{
     font-size: 14px;
-    color: #7f7c78;
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
