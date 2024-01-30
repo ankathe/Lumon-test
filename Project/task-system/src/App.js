@@ -8,7 +8,7 @@ function App() {
       <LogoLumon/>
       <div className="container-principal">
       <div className="title-container">
-        <h1>Task System</h1>
+        <h1>TASK SYSTEM</h1>
       </div>
       <Structure/>
       </div>

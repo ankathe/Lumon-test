@@ -7,9 +7,8 @@ body{
 html,body{
   color: #000000 ;
   font-family: sans-serif;
-  background-image: radial-gradient(circle at 37.72% -19.64%, #8ca67e 0, #7a9c74 25%, #639067 50%, #4b845c 75%, #347a55 100%);
+  background-image: linear-gradient(130deg, #fff6fe 0, #f8eaf8 16.67%, #efdff3 33.33%, #e5d3ef 50%, #d9c8eb 66.67%, #cdbde8 83.33%, #bfb4e6 100%);
   background-attachment: fixed;
-  animation: cambiarColor 2s ease-in alternate infinite;
 }
 
 .App{
@@ -28,6 +27,10 @@ html,body{
   align-content: center;
   text-align: center;
   font-size: 15px;
+}
+
+.title-container h1{
+  font-family: 'DM Mono', monospace;
 }
 
 .container-principal{

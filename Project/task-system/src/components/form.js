@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
 import "./form.css"
 import { v4 as uuidv4 } from 'uuid';
-import { FcHighPriority } from "react-icons/fc";
-import { FcMediumPriority } from "react-icons/fc";
-import { FcLowPriority } from "react-icons/fc";
 
 function Form(props){
     const [input, setInput] = useState('');
@@ -23,13 +20,14 @@ function Form(props){
             priority: priority
         }
         props.onSubmit(taskNew);
+        setInput("");
     }
+    
     const selectPriority = e =>{
         setPriority(e.target.value);
         console.log(e.target.value);
         
     }
-
 
     return (
         <form className='container-form' onSubmit={sendForm}>
@@ -44,6 +42,7 @@ function Form(props){
                     <label htmlFor="3" className={priority === "3" ?  "priority3-name" :""}>Low Priority</label>
             </div>
             <input 
+            value={input}
             type="text" 
             className="input-text " 
             placeholder='Add a task and label according to priority'
@@ -55,9 +54,3 @@ function Form(props){
 }
 
 export default Form;
-
-{/* <div className="container-icons-form">
-<FcHighPriority className="icon-highPriority"/>
-<FcMediumPriority className="icon-mediumPriority"/>
-<FcLowPriority className="icon-lowPriority"/>
-</div>  */}

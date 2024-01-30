@@ -8,12 +8,12 @@
     flex-wrap: wrap;
     color: #26251c;
     display: flex;
-    font-weight: bold;
     align-items: center; 
     gap: 5px;
     transition: all 0.1s ease;
     border: solid #fff;
 }
+
 .container-form:focus-within{
     border: solid #a0e8b7;
 }
@@ -27,6 +27,7 @@
     font-size: 10px;
     color: #26251c;
     width: 100%;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .priority1-name{
@@ -47,6 +48,9 @@
     border: none;
     cursor: text;
     outline: none;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 250;
+    font-size: 13px;
 }
 
 .button-form{
@@ -57,7 +61,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    font-family: 'DM Mono', monospace;
 }
+
 .button-form:hover{
     background-color: #75ef9c;
 }

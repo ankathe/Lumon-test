@@ -2,31 +2,38 @@
     width:400px;
     min-height: 30px;
     max-height: 450px;
-    background-color: #ddf5e3;
     margin:5px 0;
+    background-color: #fff;
     padding: 6px 10px 6px 15px;
     border-radius: 7px;
     color: #fff;
     display: flex;
     flex-direction: row;
-    font-weight: bold;
     align-items: center; 
     gap: 5px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 250;
 }
 
 .completed{
     text-decoration: line-through;
+    text-decoration-color: #dee8de;
+    text-decoration-style: wavy;
 }
 
 .priority-1{
     border: 2px solid #f08282;
+    font-family: 'Encode Sans', sans-serif;
 }
+
 .priority-2{
-    border: 2px solid #efcb6f;
+    border: 2px solid #efea5d;
 }
+
 .priority-3{
-    border: 2px solid #047e21;
+    border: 2px solid #6DD500;
 }
+
 .task{
     width: 94%;
     height: 100%;
@@ -38,6 +45,7 @@
     word-break: break-all;
     color: #030303;
 }
+
 .task.completed{
     text-decoration: line-through;
 }
