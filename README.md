@@ -38,7 +38,7 @@ En esta parte, se ha desarrollado un sistema de almacenamiento de tareas utiliza
 
 A continuación, se presentan una captura de pantalla del proyecto:
 
-![Listado de Tareas - Visualización CRUD](/Project/task-system/src/images/Captura.png)
+![Listado de Tareas - Visualización CRUD](/Project/task-system/src/images/screenshot.png)
 
 ## Instrucciones de Uso
 
